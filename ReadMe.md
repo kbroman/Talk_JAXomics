@@ -1,6 +1,12 @@
 ## Talk on &ldquo;Steps toward reproducible research&rdquo;
 
-These are slides for a talk that I gave for
+Talk on reproducible research for a Jackson Lab short course on
+multiomics data analysis, 27 April 2026, in Bar Harbor, Maine.
+
+- Slides: <https://kbroman.org/Talk_JAXomics/repro_research.pdf>
+- Slides with notes:  <https://kbroman.org/Talk_JAXomics/repro_research_withnotes.pdf>
+
+The slides are based on a talk that I gave for
 
 - Molecular Microbial Ecology and Evolution (MoMiEE) group at UW-Madison on 11 May 2015
 - Annual retreat for the
@@ -44,7 +50,7 @@ These are slides for a talk that I gave for
 
 It was revised a bit each time.
 
-The compiled slides:
+The extended slides:
 [pdf](https://www.biostat.wisc.edu/~kbroman/presentations/steps2rr.pdf) |
 [pdf with notes](https://www.biostat.wisc.edu/~kbroman/presentations/steps2rr_withnotes.pdf)
 
@@ -55,7 +61,7 @@ Videos: [at home](https://youtu.be/rNQ-RlG3JnQ) | [ASA](http://magazine.amstat.o
 To the extent possible under law,
 [Karl Broman](http://github.com/kbroman) has waived all copyright and
 related or neighboring rights to
-&ldquo;[Steps toward reproducible research](https://github.com/kbroman/Talk_ReproRes)&rdquo;.
+&ldquo;[Steps toward reproducible research](https://github.com/kbroman/Talk_JAXomics)&rdquo;.
 This work is published from the United States.
 <br/>
 [![CC0](http://i.creativecommons.org/p/zero/1.0/88x31.png)](http://creativecommons.org/publicdomain/zero/1.0/)
