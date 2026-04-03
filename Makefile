@@ -5,7 +5,7 @@ $(STEM).pdf: $(STEM).tex header.tex Figs/data_dict.pdf Figs/spreadsheet_g_v_mg.p
 	xelatex $<
 
 notes: $(STEM)_withnotes.pdf
-all: $(STEM).pdf notes web
+all: $(STEM).pdf notes docs/$(STEM).pdf docs/$(STEM)_withnotes.pdf
 
 Figs/data_dict.pdf: R/spreadsheets.R
 	cd $(<D);R $(R_OPTS) -e "source('$(<F)')"
@@ -21,6 +21,8 @@ $(STEM)_withnotes.pdf: $(STEM)_withnotes.tex header.tex Figs/data_dict.pdf Figs/
 $(STEM)_withnotes.tex: $(STEM).tex Ruby/createVersionWithNotes.rb
 	Ruby/createVersionWithNotes.rb $(STEM).tex $(STEM)_withnotes.tex
 
-web: $(STEM).pdf $(STEM)_withnotes.pdf
-	scp $(STEM).pdf adhara.biostat.wisc.edu:Website/presentations/steps2rr.pdf
-	scp $(STEM)_withnotes.pdf adhara.biostat.wisc.edu:Website/presentations/steps2rr_withnotes.pdf
+docs/$(STEM).pdf: $(STEM).pdf
+	cp $(STEM).pdf docs/
+
+docs/$(STEM)_withnotes.pdf: $(STEM)_withnotes.pdf
+	cp $(STEM)_withnotes.pdf docs/
