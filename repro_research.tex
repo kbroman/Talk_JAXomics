@@ -952,7 +952,8 @@ you'll do it 1000 times.
   With these informal reports, I seek to fully capture the entirety of
   my data explorations and decisions.
 
-  Python people should look at Jupyter notebooks.
+  Python people should look at {\nhilit Jupyter} notebooks. Many R
+  people have moved to {\nhilit Quarto}.
 }
 \end{frame}
 
@@ -987,6 +988,9 @@ RawData/rawdata.csv: Python/xls2csv.py RawData/rawdata.xls
   In addition to {\nhilit automating} a complex process, it also
   {\nhilit documents} the process, including the dependencies among
   data files and scripts.
+
+  An alternative is the R package {\nhilit targets}. Python people
+  should look at {\nhilit snakemake}.
 }
 \end{frame}
 
@@ -1127,7 +1131,7 @@ RawData/rawdata.csv: Python/xls2csv.py RawData/rawdata.xls
     track of past versions, but usually there's a time limit (like
     30 days or a year).
 
-    You can make copies of file with a version number appended to
+    You can make copies of a file with a version number appended to
     the name. You might zip up a directory and include the date in the
     zipped file.
 
@@ -1245,7 +1249,7 @@ RawData/rawdata.csv: Python/xls2csv.py RawData/rawdata.xls
   \bbi
 \item Code
   \bi
-\item GitHub / BitBucket
+\item GitHub / BitBucket / Codeberg
 \item Zenodo (archival, with DOIs)
   \ei
 
@@ -1266,7 +1270,8 @@ RawData/rawdata.csv: Python/xls2csv.py RawData/rawdata.xls
     third-party site. Ideally one that can be trusted as an archive
     and that provides DOIs.
 
-    Place code at GitHub (or the similar site, BitBucket). The only problem
+    Place code at GitHub (or the similar site, BitBucket, and many
+    people have moved to Codeberg as Microsoft has taken over GitHub). The only problem
     is that it can't necessarily be trusted to still be there 5 years from now.
     There's an easy way to have ``releases'' archived at zenodo.org
     automatically, with a DOI. So I recommend that.
